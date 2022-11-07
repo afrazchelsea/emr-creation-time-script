@@ -1,0 +1,36 @@
+{
+    "Clusters": [
+      {
+        "Id": "j-372HMO2EE6111",
+        "Name": "Cluster1",
+        "Status": {
+          "State": "RUNNING",
+          "StateChangeReason": {
+            "Message": "Running step"
+          },
+          "Timeline": {
+            "CreationDateTime": "2022-11-04 00:05:32.894000+00:00",
+            "ReadyDateTime": "2022-11-04 00:05:32.894000+00:00",
+            "NormalizedInstanceHours": 0,
+            "ClusterArn": "arn:aws:elasticmapreduce:us-east-1:411124754850:cluster/j-372HMO2EE6111"
+          }
+        }
+      },
+      {
+        "Id": "j-372HMO2EE6222",
+        "Name": "Cluster2",
+        "Status": {
+          "State": "RUNNING",
+          "StateChangeReason": {
+            "Message": "Running step"
+          },
+          "Timeline": {
+            "CreationDateTime": "2022-11-07 00:05:32.894000+00:00",
+            "ReadyDateTime": "2022-11-07 00:05:32.894000+00:00",
+            "NormalizedInstanceHours": 0,
+            "ClusterArn": "arn:aws:elasticmapreduce:us-east-1:411124754850:cluster/j-372HMO2EE6222"
+          }
+        }
+      }
+    ]
+  }
