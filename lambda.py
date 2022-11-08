@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     long_running_clusters = []
     emr_client = boto3.client('emr')
 
-    clusters = emr_client.list_clusters(ClusterStates=['TERMINATED'])
+    clusters = emr_client.list_clusters(ClusterStates=['RUNNING'])
     #clusters = event
 
     for cluster in clusters['Clusters']:
