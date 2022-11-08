@@ -12,7 +12,7 @@
             "CreationDateTime": "2022-11-04 00:05:32.894000+00:00",
             "ReadyDateTime": "2022-11-04 00:05:32.894000+00:00",
             "NormalizedInstanceHours": 0,
-            "ClusterArn": "arn:aws:elasticmapreduce:us-east-1:411124754851:cluster/j-372HMO2EE6111"
+            "ClusterArn": "arn:aws:elasticmapreduce:us-east-1:987654321011:cluster/j-372HMO2EE6111"
           }
         }
       },
@@ -28,7 +28,7 @@
             "CreationDateTime": "2022-11-07 00:05:32.894000+00:00",
             "ReadyDateTime": "2022-11-07 00:05:32.894000+00:00",
             "NormalizedInstanceHours": 0,
-            "ClusterArn": "arn:aws:elasticmapreduce:us-east-1:411124754851:cluster/j-372HMO2EE6222"
+            "ClusterArn": "arn:aws:elasticmapreduce:us-east-1:987654321011:cluster/j-372HMO2EE6222"
           }
         }
       }
