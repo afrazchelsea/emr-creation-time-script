@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     long_running_clusters = []
     emr_client = boto3.client('emr')
 
-    clusters = emr_client.list_clusters(ClusterStates=['RUNNING'])
+    clusters = emr_client.list_clusters(ClusterStates=['TERMINATED'])
     #clusters = event
 
     for cluster in clusters['Clusters']:
@@ -28,7 +28,7 @@ def lambda_handler(event, context):
         elapsed_time = calc_elapsed_time(cluster_launch_time)
         cluster_data.append(cluster_id)
         cluster_data.append(creation_date)
-        cluster_data.append(int(elapsed_time))
+        cluster_data.append(elapsed_time)
         if int(elapsed_time) > 24:
             long_running_clusters.append(cluster_data)
         else:
@@ -54,7 +54,7 @@ def calc_elapsed_time(launch_time):
     launch_dt = datetime.datetime.strptime(launch_time, "%Y-%m-%d %H:%M:%S")
     elapsed_time = utc_now() - launch_dt
     diff_minutes = (elapsed_time.days * 24 * 60) + (elapsed_time.seconds/60)
-    return diff_minutes/60
+    return int(diff_minutes/60)
     
 def tabulate_data(data_list):
     head = ["EMR_ID", "Creation_Data", "Elapsed_Time"]
